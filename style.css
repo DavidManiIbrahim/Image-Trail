@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+    background-color: #000;
+}
+span{
+    background: url(./react.svg);
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    right: 50%;
+    display: 0;
+    visibility: 0;
+    transform: translate(-50%, 50%);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: animate 5s linear;
+    /* background-size: cover; */
+}
+@keyframes animate {
+    0%{
+        transform: translate(-50%,-50%);
+        opacity: 1;
+        filter: hue-rotate(0);
+    }
+    100%{
+        transform: translate(50%, -5000%);
+        opacity: 0;
+        filter: hue-rotate(720deg  );
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
